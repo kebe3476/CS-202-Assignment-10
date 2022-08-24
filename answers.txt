@@ -1,0 +1,12 @@
+Keith Beauvais
+CS 202
+AS10 Comprehension Questions
+5005338658
+
+Answer the following questions in writing. Elaborate on each question, but focus on the point and make your answer as precise as possible. 
+1.	Why main.cpp file implements the myBook as a pointer and dynamic allocation, instead of creating non-dynamic object? 
+We used a pointer and dynamically allocated memory using the new keyword, and similarly, when we wanted to deallocate memory, we used the delete keyword. Using dynamic pointers allowed us to create memory and deallocate it when we wanted to and not when an object went out of scope. We had to keep the linked list allocated when we were switching menus; with non-dynamic objects, the linked list would have been deallocated once the object went out of scope.
+2.	What are the advantages of unordered map? 
+Since order did not matter in this situation, it made the program more efficient because we did not take more time to sort the list.
+3.	Why it is a good practice to derive own exception class from the C++ exception hierarchy? 
+When it comes to exception handling, we typically think we want to catch everything, and that's why exception class exists. However, if our goal is to catch a specific error without catching everything else that wouldn't affect performance, we should use particular classes inherited from the exception class. Also, using a specific class will provide more information on the problem.  
